@@ -7,7 +7,7 @@ To install Concordance, you can use pip:
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install concordance.
 
 ```bash
 pip install concordance
