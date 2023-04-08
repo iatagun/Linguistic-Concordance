@@ -27,7 +27,7 @@ This will generate a concordance for the word "bir" in the file "test.txt", show
 
 # Multiple Concordances with Threading and Progress Bar
 
-If you want to look for multiple concordance words in a text you go and look:
+If you want to look for multiple concordance words in a text you can go and look:
 ```bash
 conc_progress.py
 ```
