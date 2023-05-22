@@ -9,9 +9,13 @@ import multiprocessing
 words = open("/home/atagun/Masaüstü/VsCode/conc/demofile2.txt", 'r').read().splitlines()
 
 def conc_progress(conc_list, start_idx, end_idx):
-    for i in tqdm(conc_list[start_idx:end_idx]):
-        time.sleep(0.1)
-        conc2csv("/home/atagun/Masaüstü/VsCode/conc/plot.txt", i, 4)
+    try:
+        for i in tqdm(conc_list[start_idx:end_idx]):
+            time.sleep(0.5)
+            conc2csv("2017 5. sınıf Türkçe kitabı (meb) Tema 4.txt", i, 4)
+    except IOError as e:
+        if e.errno == errno.EPIPE:
+            pass
 
 start_time = perf_counter()
 # create two new threads
