@@ -6,7 +6,7 @@ from time import perf_counter
 import multiprocessing
 
 
-words = open("/home/atagun/Masaüstü/VsCode/conc/demofile2.txt", 'r').read().splitlines()
+words = open("demofile2.txt", 'r').read().splitlines()
 
 def conc_progress(conc_list, start_idx, end_idx):
     try:
